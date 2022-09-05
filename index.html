@@ -5,20 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <title>Ma To Do List</title>
 </head>
 
 <body>
-    <h1>Ma To Do List</h1>
-    <div class="container">
-        <input id="iField" type="text">
-        <button id="Add"> + </button>
+    <h1 class="title">Ma To Do List</h1>
 
-        <div class="tField" id="contain">
-
+    <div class="field has-addons">
+        <div class="control">
+            <input class="input is-success " id="iField" type="text">
         </div>
+        <div class="control">
+            <button class="button is-success  " id="Add"> + </button>
+        </div>
+    </div>
+
+    <div class="box " id="contain">
+
+    </div>
     </div>
     <script src="app.js"></script>
 

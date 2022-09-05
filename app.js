@@ -6,6 +6,7 @@ let iToDo = document.getElementById('iField');
 
 function ajout() {
     const todo = document.createElement('p');
+    todo.classList.add('box')
     todo.innerText = iToDo.value;
     cTodo.appendChild(todo);
     iToDo.value = "";
