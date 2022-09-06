@@ -6,9 +6,13 @@ let iToDo = document.getElementById('iField');
 
 function ajout() {
     const todo = document.createElement('p');
+    const del = document.createElement('button')
+
     todo.classList.add('box')
+    del.classList.add('delete')
     todo.innerText = iToDo.value;
     cTodo.appendChild(todo);
+    todo.appendChild(del);
     iToDo.value = "";
     todo.addEventListener('click', function() {
         todo.style.textDecoration = "line-through"
